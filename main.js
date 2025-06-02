@@ -2,14 +2,11 @@ setTimeout(() => {
   const main = document.getElementById("main");
   main.style.visibility = "visible";
   main.style.animation = "fadeIn 1s ease-in-out forwards";
+
   const loader = document.getElementById("loader");
   loader.style.display = "none";
 
-  document.body.style.backgroundImage = 'url("/assets/background2.png")';
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundPosition = "center center";
-  document.body.style.backgroundAttachment = "fixed";
-  document.body.style.backgroundSize = "cover";
+  document.body.classList.add("show-background");
 }, 2000);
 
 const wheel = document.getElementById("wheel");
