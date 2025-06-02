@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" data-arp="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"
+    />
+
+    <title>Ruleta Giratoria</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <img
+        id="loadingImage"
+        src="/assets/loader.png"
+        alt="Loading"
+        id="loadingImage"
+      />
+    </div>
+    <div id="main">
+      <div class="contenido">
+        <div class="titulo">🎯 RULETA GRATIS 🎯</div>
+
+        <div class="inputs">
+          <input
+            type="text"
+            id="username"
+            placeholder="Nombre de usuario"
+            required=""
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Correo electrónico"
+            required=""
+          />
+        </div>
+
+        <div class="roulette-container">
+          <img id="pointer" src="/assets/pointer.png" alt="Marcador" />
+          <img id="wheel" src="/assets/wheel2.png" alt="Ruleta" />
+        </div>
+
+        <button id="spinBtn">GIRAR</button>
+
+        <div id="message">
+          🎉 ¡Casi lo logras!<br />
+          Tendrás una nueva oportunidad en 6 horas.
+          <br /><button id="closeMsg">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
